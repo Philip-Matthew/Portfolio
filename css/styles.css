@@ -1,0 +1,126 @@
+/* Import bootstrap and font-awesome libraries */
+@import url('https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
+
+/* Define custom colors */
+:root {
+  --primary-color: #007bff;
+  --secondary-color: #6c757d;
+  --accent-color: #ffc107;
+  --background-color: #f0f0f0;
+  --box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Style the body element */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: var(--background-color);
+}
+
+/* Style the nav element */
+nav {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 15px 20px; /* Increased padding for a more balanced appearance */
+  box-shadow: var(--box-shadow);
+}
+
+/* Style the nav links */
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+  color: var(--accent-color);
+}
+
+/* Style the main element */
+main {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  box-shadow: var(--box-shadow);
+  background-color: white;
+  border-radius: 8px;
+}
+
+/* Style the article elements */
+article {
+  margin-bottom: 20px;
+}
+
+/* Style the article headers */
+article header {
+  display: flex;
+  align-items: center;
+}
+
+/* Style the profile image */
+.profile-image {
+  border-radius: 50%;
+  margin-right: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Style the article sections */
+article section, aside section {
+  margin-top: 20px;
+}
+
+/* Style the article headings */
+article h2, aside h2 {
+  color: var(--primary-color);
+  border-bottom: 2px solid var(--primary-color);
+  padding-bottom: 10px;
+  margin-top: 20px;
+}
+
+/* Style the article subheadings */
+article h3, aside h3 {
+  color: var(--secondary-color);
+  margin-top: 15px;
+}
+
+/* Style the article lists */
+article ul, aside ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Style the article list items */
+article li, aside li {
+  margin: 8px 0;
+}
+
+/* Style the article list items with icons */
+article li::before, aside li::before {
+  content: "\f00c";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  color: var(--accent-color);
+  margin-right: 10px;
+}
+
+/* Style the footer element */
+footer {
+  background-color: var(--primary-color);
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: 20px;
+}
