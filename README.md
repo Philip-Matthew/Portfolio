@@ -16,7 +16,7 @@ This project represents the personal webpage of Philip Matthew, a Full Stack Dev
 1. Clone the repository:
 
    ```bash
-   git clone <repository_url>
+   git clone https://github.com/Philip-Matthew/My-Resume.git
 Open the index.html file in a web browser.
 Usage
 This webpage serves as a portfolio for Philip Matthew, showcasing his skills, education, and achievements. Feel free to explore the different sections to learn more about Philip's background and expertise.
