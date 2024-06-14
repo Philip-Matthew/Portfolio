@@ -7,109 +7,65 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Resume</title>
     <link rel="stylesheet" href="./css/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <nav>
-        <ul>
-            <li><a href="#summary">Summary</a></li>
-            <li><a href="#education">Education</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#certifications">Certifications</a></li>
-            <li><a href="#extras">Extras</a></li>
-        </ul>
-    </nav>
 
-    <main>
-        <article id="summary">
-            <header>
-                <h1>Philip Matthew</h1>
-                <img class="profile-image" src="./Resources/My Profile 1" alt="Philip Matthew's Profile Picture" width="150px" height="150px">
-            </header>
-            <section>
-                <h2>Summary</h2>
-                <p>A Budding Full Stack Developer and Python Programmer.</p>
-            </section>
-        </article>
-
-        <article id="education">
-            <section>
-                <h2>Education</h2>
-                <h3>School</h3>
-                <p><strong>SRKMHSS</strong>, West Tambaram.</p><br>
-                <h3>College</h3>
-                <p><strong>MEC</strong>, Kundrathur.</p>
-                <p>[B.tech Computer Science And Business Systems]</p>
-            </section>
-        </article>
-
-        <article id="skills">
-            <section>
-                <h2>Skills</h2>
-                <h3>Soft Skills</h3>
-                <ul>
-                    <li>Problem Solving.</li>
-                    <li>Communication.</li>
-                    <li>Leadership.</li>
-                    <li>Time Management.</li>
-                    <li>Creativity.</li>
-                </ul><br>
-
-                <h3>Programming Skills</h3>
-                <ul>
-                    <li>Python.</li>
-                    <li>HTML, HTML-5.</li>
-                    <li>CSS.</li>
-                    <li>JavaScript</li>
-                    <li>React JS</li>
-                    <li>Express JS</li>
-                    <li>JQuery</li>
-                    <li>MySQL - PostgreSQL</li>
-                    <li>NoSQL - MongoDB</li>
-                    <li>Node JS</li>
-                    <li>RESTful APIs</li>
-                    <li>Postman API</li>
-                    <li>C Programming.</li>
-                    <li>C++ Programming.</li>
+    <!-- Navbar Section -->
+    <div class="container">
+      <nav class="navbar navbar-expand-sm navbar-dark bg-dark rounded mt-3 navbar-styles" aria-label="Third navbar example">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#" style="font-family: cursive;">Matt</a>
+          <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample03" aria-controls="navbarsExample03" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+    
+        <div class="navbar-collapse collapse" id="navbarsExample03">
+            <ul class="navbar-nav me-auto mb-2 mb-sm-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Summary</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Education</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Skills</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Certifications</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Extras</a></li>
                 </ul>
-            </section>
-        </article>
+              </li>
+            </ul>
+        </div>
+        </div>
+      </nav>
+    </div>
 
-        <article id="certifications">
-            <section>
-                <h2>Awards and Certification </h2>
-                <ul>
-                    <li>Basics of HTML and CSS.</li>
-                    <li><strong>NPTEL</strong> - How Does My Smartphone Work? Workshop.</li>
-                    <li>How To CSS Bootcamp Certificate Of Achievement.</li>
-                    <li><b>EduPrep</b> - HTML Course Completion</li>
-                    <li><b>EduPrep</b> - CSS Course Completion</li>
-                </ul>
-            </section>
-        </article>
-
-        <aside id="extras">
-            <section>
-                <h2>Extra Curriculars.</h2>
-                <ul>
-                    <h1>My Hobbies</h1>
-                    <ul>
-                        <li>Video Editing</li>
-                        <li>AI Exploring</li>
-                        <li>Reading Books</li>
-                    </ul><br>
-                    <h1>Contact ME</h1>
-                    <ul>
-                        <li><b>e-mail -</b> philipmatthew26@gmail.com</li>
-                    </ul>
-                </ul>
-            </section>
-        </aside>
-    </main>
-
-    <footer>
-        <p>© 2024 Philip Matthew. All rights reserved.</p>
-    </footer>
+    <!-- Hero Section -->
+    <div id="hero-section">
+        <div class="container-fluid hero-section d-flex align-items-center">
+            <div class="row w-100">
+                <div class="col-md-7 p-md-5">
+                    <h2 class="featurette-heading fw-normal lh-1 mt-5" style="font-size: 3rem; font-family:sans-serif;">
+                        Philip Matthew <br><span class="text-body-secondary fs-3">Full-stack engineer and python programmer</span>
+                    </h2>
+                    <p class="lead ml-1">An innovative and passionate engineer and developer</p>
+                    <div class="d-flex justify-content-center justify-content-md-start">
+                        <a href="https://drive.google.com/file/d/1-imh0X9Hz2r_oyrhbIFbT156NB7h-vkW/view?usp=drive_link">
+                            <button class="resume-button">Resume</button>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-5 p-5 d-flex justify-content-center">
+                    <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto profile-image rounded-circle"
+                        width="300" height="300" src="./Resources/My Profile 1" alt="Philip Matthew's Profile Picture">
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
-
 </html>
