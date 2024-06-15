@@ -61,3 +61,38 @@ body {
       width: 6rem;
   }
 }
+
+/* ----------------------------------------------------------------- */
+
+/* Certifications.html file styles */
+
+.certifications-heading {
+  height: fit-content;
+  width: fit-content;
+  margin: 0 auto;
+  padding: 1rem;
+  border-radius: 1rem;
+}
+
+.certificates-container {
+  padding: 2rem 0;
+  animation: fadeIn 1s ease-out;
+}
+
+.certificates-display {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.certificate-img {
+  /* width: ; Adjust width as needed */
+  height: auto;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.certificate-img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
